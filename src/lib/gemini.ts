@@ -1,8 +1,12 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import type { Question, Answer, Score } from "./types";
 
-// Hardcoded for demo purposes as requested
-const API_KEY = "AIzaSyDIlRSC00sXGEBBLSgIFyNKCnIPgcRGVNU";
+// Use environment variable for security
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
+
+if (!API_KEY) {
+  console.error("Missing VITE_GEMINI_API_KEY. AI features will not work.");
+}
 
 export const generateQuestionsFn = async (resumeText: string, jobRole: string): Promise<Question[]> => {
   const genAI = new GoogleGenerativeAI(API_KEY);
