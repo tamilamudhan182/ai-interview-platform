@@ -2,7 +2,7 @@
 
 A futuristic, interactive web application that conducts real-time technical interviews using AI. It simulates a real interviewer by asking adaptive questions, listening to your spoken answers, and providing instant, granular feedback on your performance.
 
-![AI Interviewer Demo](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop)
+![AI Interviewer Demo]((https://ai-interview-platform-five-theta.vercel.app/))
 
 ## ✨ Key Features
 
